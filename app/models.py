@@ -8,7 +8,7 @@ class Car(models.Model):
     id = models.AutoField(primary_key=True)
     model_name = models.CharField(max_length=50)
     available_from = models.DateField()
-    price = models.PositiveSmallIntegerField(max_length=7)
+    price = models.PositiveSmallIntegerField()
     manufacturer = models.CharField(max_length=50)
     description = models.TextField(max_length=255)
 
