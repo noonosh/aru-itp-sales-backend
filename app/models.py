@@ -11,6 +11,7 @@ class Car(models.Model):
     price = models.PositiveSmallIntegerField(verbose_name="Price (£)")
     manufacturer = models.CharField(max_length=50)
     description = models.TextField(max_length=255)
+    currency = models.CharField(default="GBP", editable=False, max_length=3)
 
     def __str__(self):
         return str(self.model_name)
